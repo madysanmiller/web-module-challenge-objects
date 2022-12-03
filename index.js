@@ -110,8 +110,15 @@ Use the addReview function below to do the following:
 */
 
 
-function addReview(array, name, rating, feedback){
- reviews.push({name: 'Mady', rating: 4, feedback: 'Decent food and Decent service'});
+function addReview(array, ReviewerName, reviewerRating, reviewerFeedback){
+ const newArray = array
+ const newReviewer = {
+  name: ReviewerName,
+  rating: reviewerRating,
+  feedback: reviewerFeedback,
+ }
+ newArray.push(newReviewer);
+ return newArray;
 }
 
 console.log('Task 5:', addReview)
